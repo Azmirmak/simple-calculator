@@ -1,0 +1,21 @@
+{
+  "name": "simple-calculator-gi-1pj",
+  "version": "1.0.1",
+  "description": "Simple calculator using Typescript, Node.js and Inquirer",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "simple-calculator-gi-1pj": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MAK",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
