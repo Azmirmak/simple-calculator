@@ -11,7 +11,7 @@ const answer = await inquirer.prompt([
       message: "Choose the given operators to proceed: ",
       type: "list",
       name: "operator",
-      choices: ["Addition", "Subtraction", "Multiplication", "Division"],
+      choices: ["Addition", "Subtraction", "Multiplication", "Division","Remainder"],
     },
   ]);
   
@@ -23,6 +23,8 @@ const answer = await inquirer.prompt([
       console.log(answer.firstNumber * answer.secondNumber);
   }else if(answer.operator === "Division"){
       console.log(answer.firstNumber / answer.secondNumber);
+  }else if(answer.operator === "Remainder"){
+    console.log(answer.firstNumber % answer.secondNumber);
   }else{
       console.log("please choose valid operator");
   }
